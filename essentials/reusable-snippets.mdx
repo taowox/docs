@@ -1,46 +1,7 @@
 ---
-title: Reusable Snippets
-description: Reusable, custom snippets to keep content in sync
-icon: 'recycle'
----
-
-import SnippetIntro from '/snippets/snippet-intro.mdx';
-
-<SnippetIntro />
-
-## Creating a custom snippet
-
-**Pre-condition**: You must create your snippet file in the `snippets` directory.
-
-<Note>
-  Any page in the `snippets` directory will be treated as a snippet and will not
-  be rendered into a standalone page. If you want to create a standalone page
-  from the snippet, import the snippet into another file and call it as a
-  component.
-</Note>
-
-### Default export
-
-1. Add content to your snippet file that you want to re-use across multiple
-   locations. Optionally, you can add variables that can be filled in via props
-   when you import the snippet.
-
-```mdx snippets/my-snippet.mdx
-Hello world! This is my content I want to reuse across pages. My keyword of the
-day is {word}.
-```
-
-<Warning>
-  The content that you want to reuse must be inside the `snippets` directory in
-  order for the import to work.
-</Warning>
-
-2. Import the snippet into your destination file.
-
-```mdx destination-file.mdx
----
-title: My title
-description: My Description
+title: "My title"
+description: "My Description"
+icon: "recycle"
 ---
 
 import MySnippet from '/snippets/path/to/my-snippet.mdx';
@@ -50,7 +11,8 @@ import MySnippet from '/snippets/path/to/my-snippet.mdx';
 Lorem impsum dolor sit amet.
 
 <MySnippet word="bananas" />
-```
+
+````
 
 ### Reusable variables
 
@@ -60,7 +22,7 @@ Lorem impsum dolor sit amet.
 export const myName = 'my name';
 
 export const myObject = { fruit: 'strawberries' };
-```
+````
 
 2. Import the snippet from your destination file and use the variable:
 

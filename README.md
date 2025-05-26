@@ -1,6 +1,6 @@
 # Mintlify Starter Kit
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+Click on `Use this template` to copy the Min[tlify starter kit](http://google.com). The starter kit contains examples including
 
 - Guide pages
 - Navigation
@@ -8,11 +8,13 @@ Click on `Use this template` to copy the Mintlify starter kit. The starter kit c
 - API Reference pages
 - Use of popular components
 
+/
+
 ### Development
 
 Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
 
-```
+```[expandable]
 npm i -g mintlify
 ```
 
